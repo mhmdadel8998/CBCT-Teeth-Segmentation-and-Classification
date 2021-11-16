@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1824</width>
+    <height>959</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QVTKOpenGLWidget" name="openGLWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>391</width>
+      <height>281</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QVTKOpenGLWidget" name="openGLWidget_2">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>300</y>
+      <width>391</width>
+      <height>281</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QVTKOpenGLWidget" name="openGLWidget_3">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>590</y>
+      <width>391</width>
+      <height>281</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QVTKOpenGLWidget" name="openGLWidget_4">
+    <property name="geometry">
+     <rect>
+      <x>420</x>
+      <y>10</y>
+      <width>391</width>
+      <height>281</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QVTKOpenGLWidget" name="openGLWidget_5">
+    <property name="geometry">
+     <rect>
+      <x>420</x>
+      <y>300</y>
+      <width>391</width>
+      <height>281</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QVTKOpenGLWidget" name="openGLWidget_6">
+    <property name="geometry">
+     <rect>
+      <x>420</x>
+      <y>590</y>
+      <width>391</width>
+      <height>281</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QVTKOpenGLWidget" name="openGLWidget_7">
+    <property name="geometry">
+     <rect>
+      <x>830</x>
+      <y>10</y>
+      <width>391</width>
+      <height>281</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QVTKOpenGLWidget" name="openGLWidget_8">
+    <property name="geometry">
+     <rect>
+      <x>830</x>
+      <y>300</y>
+      <width>391</width>
+      <height>281</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QVTKOpenGLWidget" name="openGLWidget_9">
+    <property name="geometry">
+     <rect>
+      <x>830</x>
+      <y>590</y>
+      <width>391</width>
+      <height>281</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QVTKOpenGLWidget" name="openGLWidget_10">
+    <property name="geometry">
+     <rect>
+      <x>1240</x>
+      <y>10</y>
+      <width>581</width>
+      <height>861</height>
+     </rect>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1824</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="actionOpen"/>
+   </widget>
+   <widget class="QMenu" name="menuEdit">
+    <property name="title">
+     <string>Edit</string>
+    </property>
+    <widget class="QMenu" name="menuVolume">
+     <property name="title">
+      <string>Volume</string>
+     </property>
+     <addaction name="actionMIP"/>
+     <addaction name="actionXRay"/>
+     <addaction name="actionCT"/>
+     <addaction name="actionBone"/>
+    </widget>
+    <addaction name="menuVolume"/>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuEdit"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionrotate"/>
+  </widget>
+  <action name="actionOpen">
+   <property name="icon">
+    <iconset>
+     <normaloff>C:/Users/Mo/Downloads/26-268656_open-file-folder-icon-folder-files-icon-png.png</normaloff>C:/Users/Mo/Downloads/26-268656_open-file-folder-icon-folder-files-icon-png.png</iconset>
+   </property>
+   <property name="text">
+    <string>Open</string>
+   </property>
+  </action>
+  <action name="actionrotate">
+   <property name="icon">
+    <iconset>
+     <normaloff>C:/Users/Mo/Downloads/437-4374497_rotating-arrow-symbol-icon-rotate-arrow-png-transparent.png</normaloff>C:/Users/Mo/Downloads/437-4374497_rotating-arrow-symbol-icon-rotate-arrow-png-transparent.png</iconset>
+   </property>
+   <property name="text">
+    <string>rotate</string>
+   </property>
+  </action>
+  <action name="actionmove">
+   <property name="icon">
+    <iconset>
+     <normaloff>C:/Users/Mo/Downloads/file-svg-move-icon-11563347037wxavun0mrl.png</normaloff>C:/Users/Mo/Downloads/file-svg-move-icon-11563347037wxavun0mrl.png</iconset>
+   </property>
+   <property name="text">
+    <string>move</string>
+   </property>
+  </action>
+  <action name="actionZoomIN">
+   <property name="icon">
+    <iconset>
+     <normaloff>C:/Users/Mo/Downloads/images.png</normaloff>C:/Users/Mo/Downloads/images.png</iconset>
+   </property>
+   <property name="text">
+    <string>ZoomIN</string>
+   </property>
+  </action>
+  <action name="actionZoomout">
+   <property name="icon">
+    <iconset>
+     <normaloff>C:/Users/Mo/Downloads/download (1).png</normaloff>C:/Users/Mo/Downloads/download (1).png</iconset>
+   </property>
+   <property name="text">
+    <string>Zoomout</string>
+   </property>
+  </action>
+  <action name="actionMIP">
+   <property name="text">
+    <string>MIP</string>
+   </property>
+  </action>
+  <action name="actionXRay">
+   <property name="text">
+    <string>Skin</string>
+   </property>
+  </action>
+  <action name="actionCT">
+   <property name="text">
+    <string>Muscle</string>
+   </property>
+  </action>
+  <action name="actionBone">
+   <property name="text">
+    <string>Bone</string>
+   </property>
+  </action>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QVTKOpenGLWidget</class>
+   <extends>QOpenGLWidget</extends>
+   <header>qvtkopenglwidget.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
