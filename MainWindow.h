@@ -8,6 +8,9 @@
 #include <QVTKInteractor.h>
 #include <vtkInteractorStyle.h>
 
+
+
+
 namespace Ui {
 	class MainWindow;
 }
